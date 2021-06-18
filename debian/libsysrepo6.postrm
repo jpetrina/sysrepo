@@ -1,5 +1,5 @@
 #!/bin/sh
-# postrm script for libsysrepo5
+# postrm script for libsysrepo6
 #
 # see: dh_installdeb(1)
 

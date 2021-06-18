@@ -7,13 +7,12 @@ Build-Depends: cmake,
                debhelper-compat (= 12),
                doxygen,
                graphviz,
-               libyang-cpp-dev (>= 1.0.182),
-               libyang-dev (>= 1.0.182),
+               libyang2-dev (>= 2.0.7),
                pkg-config
 Homepage: https://github.com/sysrepo/sysrepo
 
 Package: sysrepo
-Depends: libsysrepo5 (= ${binary:Version}),
+Depends: libsysrepo6 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Section: admin
@@ -47,7 +46,7 @@ Description: YANG-based configuration and operational state data store [docs]
  This package contains the documentation.
 
 Package: sysrepo-plugind
-Depends: libsysrepo5 (= ${binary:Version}),
+Depends: libsysrepo6 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
 Section: admin
@@ -64,7 +63,7 @@ Description: YANG-based configuration and operational state data store [daemon]
  .
  This package contains the daemon for grouping sysrepo plugins.
 
-Package: libsysrepo5
+Package: libsysrepo6
 Pre-Depends: ${misc:Pre-Depends}
 Depends: ${misc:Depends},
          ${shlibs:Depends}
@@ -84,8 +83,8 @@ Description: YANG-based configuration and operational state data store [C librar
  This package contains the shared C library.
 
 Package: libsysrepo-dev
-Depends: libsysrepo5 (= ${binary:Version}),
-         libyang-dev (>= 1.0.182),
+Depends: libsysrepo6 (= ${binary:Version}),
+         libyang2-dev (>= 2.0.7),
          ${misc:Depends},
          ${shlibs:Depends}
 Section: libdevel
@@ -101,42 +100,3 @@ Description: YANG-based configuration and operational state data store [C develo
  access their configuration.
  .
  This package contains the static C library and headers.
-
-Package: libsysrepo-cpp5
-Pre-Depends: ${misc:Pre-Depends}
-Depends: libsysrepo5 (= ${binary:Version}),
-         ${misc:Depends},
-         ${shlibs:Depends}
-Section: libs
-Architecture: any
-Multi-Arch: same
-Description: YANG-based configuration and operational state data store [C++ library]
- Applications can use sysrepo to store their configuration modeled by provided
- YANG model instead of using e.g. flat configuration files. Sysrepo will ensure
- data consistency of the data stored in the datastore and enforce data
- constraints defined by YANG model.
- .
- Sysrepo can be easily integrated with management agents such as NETCONF or
- RESTCONF servers, using the same client library API that applications use to
- access their configuration.
- .
- This package contains the shared C++ library.
-
-Package: libsysrepo-cpp-dev
-Depends: libsysrepo-cpp5 (= ${binary:Version}),
-         libyang-cpp-dev (>= 1.0.182),
-         ${misc:Depends},
-         ${shlibs:Depends}
-Section: libdevel
-Architecture: any
-Description: YANG-based configuration and operational state data store [C++ development]
- Applications can use sysrepo to store their configuration modeled by provided
- YANG model instead of using e.g. flat configuration files. Sysrepo will ensure
- data consistency of the data stored in the datastore and enforce data
- constraints defined by YANG model.
- .
- Sysrepo can be easily integrated with management agents such as NETCONF or
- RESTCONF servers, using the same client library API that applications use to
- access their configuration.
- .
- This package contains the shared C++ library and headers.

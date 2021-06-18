@@ -1,3 +1,9 @@
+sysrepo (2.0.1-1) unstable; urgency=medium
+
+  * Update to newest release
+
+ -- Jakov Petrina <jakov.petrina@sartura.hr>  Fri, 18 Jun 2021 14:08:19 +0200
+
 sysrepo (1.4.70-4) unstable; urgency=medium
 
   * Remove syslog.target from sysrepo-plugind service

@@ -1,4 +1,5 @@
 usr/include/sysrepo.h
+usr/include/sysrepo_types.h
 usr/include/sysrepo/*.h
 usr/lib/*/libsysrepo.so
 usr/lib/*/pkgconfig/sysrepo.pc

@@ -14,7 +14,7 @@ CXXFLAGS+=$(CPPFLAGS)
 # needed for dh_auto_test
 export SYSREPO_REPOSITORY_PATH=$(CURDIR)
 
-# be strict when comparing symbols in libsysrepo5
+# be strict when comparing symbols in libsysrepo6
 export DPKG_GENSYMBOLS_CHECK_LEVEL=4
 
 %:
