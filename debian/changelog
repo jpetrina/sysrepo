@@ -1,0 +1,27 @@
+sysrepo (1.4.70-4) unstable; urgency=medium
+
+  * Remove syslog.target from sysrepo-plugind service
+
+ -- Ondřej Surý <ondrej@debian.org>  Mon, 07 Dec 2020 11:13:54 +0100
+
+sysrepo (1.4.70-3) unstable; urgency=medium
+
+  * Add the sysrepo-plugind system service
+  * Remove the /etc/sysrepo directory on purge
+
+ -- Ondřej Surý <ondrej@debian.org>  Mon, 07 Dec 2020 10:57:25 +0100
+
+sysrepo (1.4.70-2) unstable; urgency=medium
+
+  * Fix little typos:
+    + Missing .h extension in yang file in d/copyright
+    + Missing pkg-config in Build-Depends
+    + Fix libyang-cpp-dev version dependency forlibsysrepo-cpp-dev
+
+ -- Ondřej Surý <ondrej@debian.org>  Mon, 07 Dec 2020 09:11:56 +0100
+
+sysrepo (1.4.70-1) unstable; urgency=low
+
+  * Initial packaging (Closes: #976375)
+
+ -- Ondřej Surý <ondrej@debian.org>  Fri, 4 Dec 2020 09:02:12 +0100
